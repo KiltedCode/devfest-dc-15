@@ -1,0 +1,14 @@
+[
+	{
+		"planId" : "001",
+		"name" : "Sprint Triathlon",
+		"img" : null,
+		"types" : ["run", "bike", "swim"]
+	},
+	{
+		"planId" : "002",
+		"name" : "Marathon for Beginners",
+		"img" : "run-1.png",
+		"types" : ["run"]
+	}
+]

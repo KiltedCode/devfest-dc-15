@@ -1,0 +1,186 @@
+$font-stack: 'ProximaNova', sans-serif;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(../fonts/proxima-nova/ProximaNova-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(../fonts/proxima-nova/ProximaNova-RegularIt.otf);
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(../fonts/proxima-nova/ProximaNova-Light.otf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(../fonts/proxima-nova/ProximaNova-LightIt.otf);
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(../fonts/proxima-nova/ProximaNova-Semibold.otf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(../fonts/proxima-nova/ProximaNova-SemiboldIt.otf);
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(../fonts/proxima-nova/ProximaNova-Bold.otf);
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(../fonts/proxima-nova/ProximaNova-BoldIt.otf);
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(../fonts/proxima-nova/ProximaNova-Extrabld.otf);
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url(../fonts/proxima-nova/ProximaNova-Black.otf);
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ProximaNovaCond';
+  src: url(../fonts/proxima-nova/ProximaNovaCond-Light.otf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaCond';
+  src: url(../fonts/proxima-nova/ProximaNovaCond-LightIt.otf);
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'ProximaNovaCond';
+  src: url(../fonts/proxima-nova/ProximaNovaCond-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaCond';
+  src: url(../fonts/proxima-nova/ProximaNovaCond-RegularIt.otf);
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'ProximaNovaCond';
+  src: url(../fonts/proxima-nova/ProximaNovaCond-Semibold.otf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaCond';
+  src: url(../fonts/proxima-nova/ProximaNovaCond-SemiboldIt.otf);
+  font-weight: 600;
+  font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: $font-stack;
+}
+
+@import 'font-awesome/font-awesome';
+
+@import 'material-colors/sass-material-colors';
+
+.smaller {
+	font-size: 0.75em;
+}
+
+.leftPadd {
+	padding-left: 25px;
+}
+
+.day {
+
+	.dow {
+		position: absolute;
+		left: 5px;
+		top: 5px;
+	}
+}
+
+.day-off {
+	background: material-color('grey', '400') url(../img/workout/rest.svg) no-repeat center center;
+	background-size: 70%;
+}
+
+.day-run {
+	background: material-color('blue', '500') url(../img/workout/run.svg) no-repeat center center;
+	background-size: 70%;
+}
+
+.day-long-run {
+	background: material-color('indigo', '500') url(../img/workout/run.svg) no-repeat center center;
+	background-size: 70%;
+}
+
+.day-bike {
+	background: material-color('purple', '500') url(../img/workout/bike.svg) no-repeat center center;
+	background-size: 70%;
+}
+
+.day-swim {
+	background: material-color('teal', '500') url(../img/workout/swim.svg) no-repeat center center;
+	background-size: 70%;
+}
+
+.day-weights {
+	background: material-color('blue-grey', '500') url(../img/workout/weights.svg) no-repeat center center;
+	background-size: 70%;
+}
+
+.day-yoga {
+	background: material-color('amber', '500') url(../img/workout/yoga.svg) no-repeat center center;
+	background-size: 70%;
+}
+
+.success {
+	background-color: material-color('green', '800');
+	svg {
+		background-color: transparent;
+		fill: material-color('green', '200');
+	}
+}
+
+.miss {
+	background-color: material-color('red', '800');
+	svg {
+		background-color: transparent;
+		fill: material-color('red', '200');
+	}
+}
+
+@import 'sidenav';

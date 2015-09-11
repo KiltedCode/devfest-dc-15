@@ -1,0 +1,51 @@
+
+.pt-sidenav {
+	background: material-color('orange', '500');
+}
+
+.pt-sidenav md-content {
+	background: transparent;
+}
+
+.pt-sidenav,
+.pt-sidenav.md-locked-open-add-active,
+.pt-sidenav.md-locked-open {
+	width: 250px;
+	min-width: 250px;
+	max-width: 250px;
+}
+
+.pt-sidenav > * {
+	min-width: 215px;
+}
+
+.nav-menu {
+	list-style: none;
+	max-width: 100%;
+	overflow-x: hidden;
+	padding: 0;
+
+	ul {
+		@extend .nav-menu;
+	}
+
+	li {
+		margin: 0;
+	}
+
+	> li {
+		border-bottom: 1px solid material-color('orange', '300');
+	}
+
+	.md-button {
+		color: #ffffff;
+		margin: 0;
+		text-align: left;
+		text-decoration: none;
+		width: 100%;
+	}
+}
+
+.light-toolbar {
+	background-color: #f6f6f6;
+}

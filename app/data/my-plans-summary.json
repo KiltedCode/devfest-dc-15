@@ -1,0 +1,65 @@
+[
+	{
+		"trainingId": "001",
+		"name" : "Runner's World Hat Trick",
+		"img" : "run-2.png",
+		"goalDate" : 1445083200000,
+		"week" : 13,
+		"totalWeeks" : 19,
+		"currentWeek" : [
+			{
+				"training" : false,
+				"dow" : "M"
+			},
+			{
+				"dow" : "Tu",
+				"training" : {
+					"recorded" : true,
+					"success" : true,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					},
+					"actual" : {
+						"time" : "28m",
+						"distance" : "2.19 mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "W"
+			},
+			{
+				"dow" : "Th",
+				"training" : {
+					"recorded" : true,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "F"
+			},
+			{
+				"dow" : "Sa",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"distance" : "4mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "Su"
+			}
+		]
+	}
+]
