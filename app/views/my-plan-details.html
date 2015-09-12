@@ -29,7 +29,8 @@
 		          	<div ng-if="day.training.recorded" class="goal-time">{{day.training.actual.time}}</div>
 		          	<div ng-if="!day.training.recorded" class="goal-distance">{{day.training.goal.distance}}</div>
 		          	<div ng-if="day.training.recorded" class="goal-distance">{{day.training.actual.distance}}</div>
-		          	<md-button ng-if="day.training != false" class="md-icon-button md-primary" ng-class="{ 'cursor-default' : day.training.recorded }"  aria-label="Settings">
+		          	<md-button ng-if="day.training != false" ng-click="model.openRecordWorkout($event, model.mp.trainingId, $index)" 
+		          		class="md-icon-button md-primary" ng-class="{ 'cursor-default' : day.training.recorded }"  aria-label="Settings">
 					    <md-icon ng-if="day.training.recorded && day.training.success" class="success" md-svg-src="img/hit.svg" style="width: 75%; height: 75%;"></md-icon>
 				  		<md-icon ng-if="day.training.recorded && day.training.success == false" class="miss" md-svg-src="img/miss.svg" style="width: 75%; height: 75%;"></md-icon>
 					</md-button>

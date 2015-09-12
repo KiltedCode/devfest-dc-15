@@ -1,6 +1,6 @@
 /* hub controller */
 angular.module('pt.hub')
-.controller('HubCtrl', [ '$scope', '$mdBottomSheet', '$mdDialog', 'HubService', function($scope, $mdBottomSheet, $mdDialog, HubService) {
+.controller('HubCtrl', [ '$scope', '$mdDialog', '$mdToast', 'HubService', function($scope, $mdDialog, $mdToast, HubService) {
 	$scope.model = {};
 	$scope.model.myPlansSumm = [];
 	$scope.model.availablePlans = [];
@@ -10,15 +10,25 @@ angular.module('pt.hub')
 	HubService.getCurrentPlansSummary()
 		.then(function(data, status) {
 			$scope.model.myPlansSumm = data;
-		}, function(data, status) {
-			console.log('error', status);
+		}, function(error) {
+			$mdToast.show(
+		      $mdToast.simple()
+		        .content('Error getting current plans. (HTTP-'+error.status+')')
+		        .position('top right')
+		        .hideDelay(3000)
+		    );
 		});
 
 	HubService.getAvailablePlans()
 		.then(function(data, status) {
 			$scope.model.availablePlans = data;
-		}, function(data, status) {
-			console.log('error', status);
+		}, function(error) {
+			$mdToast.show(
+		      $mdToast.simple()
+		        .content('Error getting available plans. (HTTP-'+error.status+')')
+		        .position('top right')
+		        .hideDelay(3000)
+		    );
 		} );
 
 	var startPlan = function(id, startDate) {
@@ -46,7 +56,6 @@ angular.module('pt.hub')
   	};
 
   	$scope.model.openRecordWorkout = function(ev, id, index) {
-  		console.log('index', index);
   		$scope.model.workoutShow = '';
   		$scope.model.workout = {};
   		$scope.model.workout.time = $scope.model.myPlansSumm[0].currentWeek[index].training.goal.time;
@@ -64,7 +73,12 @@ angular.module('pt.hub')
 	    		.then(function(data, status) {
 					$scope.model.myPlansSumm = data;
 				}, function(data, status) {
-					console.log('error', status);
+					$mdToast.show(
+				    	$mdToast.simple()
+				        .content('Error recording your workout. (HTTP-'+error.status+')')
+				        .position('top right')
+				        .hideDelay(3000)
+				    );
 				});
 	    }, function() {
 	    	
@@ -72,7 +86,6 @@ angular.module('pt.hub')
   	};
 
   	$scope.model.recordWorkout = function(action) {
-  		console.log('workout');
   		if(action == 'cancel') {
 			$mdDialog.cancel();
 		} else {
@@ -92,7 +105,6 @@ angular.module('pt.hub')
 		$mdDialog.cancel();
 	};
 	$scope.start = function() {
-		console.log('start', $scope.model.planStartDate);
 		$mdDialog.hide($scope.model.planStartDate);
 	};
 }]);
