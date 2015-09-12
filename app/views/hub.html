@@ -46,6 +46,9 @@
 			          	ng-class="{ 'day-run' : type =='run','day-bike': type=='bike', 'day-swim': type=='swim', 'day-weights': type=='weights', 'day-yoga': type=='yoga' }">
 	      			</md-grid-tile>
 	   			</md-grid-list>
+	   			<div class="md-actions" layout="row" layout-align="center center">
+			   		<md-button ng-click="model.getStarted($event, ap.planId, $index)" class="md-accent">get training</md-button>
+			 	</div>
    			</div>
 	 	</md-card-content>
 	 	
