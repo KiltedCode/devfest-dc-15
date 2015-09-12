@@ -21,14 +21,14 @@
    			</md-grid-list>
 	 	</md-card-content>
 	 	<div class="md-actions" layout="row" layout-align="end center">
-	   		<md-button>view full plan</md-button>
+	   		<md-button ng-click="go('/my-plan/001')">view full plan</md-button>
 	 	</div>
 	</md-card>
 
 	<md-card flex-gt-sm="90" flex-gt-md="80">
-		<md-card-content>
-			<h2>Start a new plan?</h2>
-			<div ng-repeat="ap in model.availablePlans">
+		<md-card-content layout="row" layout-wrap>
+			<h2 flex="90">Start a new plan?</h2>
+			<div ng-repeat="ap in model.availablePlans" flex-sm="90" flex-gt-sm="50" flex-gt-md="50">
 				<h3>{{ap.name}}</h3>
 				<md-grid-list  md-cols-gt-md="7" md-cols-sm="2" md-cols-md="4"
 			        md-row-height-gt-md="1:1" md-row-height="4:3"
@@ -46,9 +46,6 @@
 	   			</md-grid-list>
    			</div>
 	 	</md-card-content>
-	 	<div class="md-actions" layout="row" layout-align="end center">
-	   		<md-button>view full plan</md-button>
-	 	</div>
 	</md-card>	
 </div>
 

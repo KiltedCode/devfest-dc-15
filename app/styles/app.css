@@ -2117,6 +2117,18 @@
   position: absolute;
   left: 5px;
   top: 5px; }
+.day .train-date {
+  position: absolute;
+  right: 5px;
+  top: 5px; }
+.day .goal-distance {
+  position: absolute;
+  right: 5px;
+  bottom: 5px; }
+.day .goal-time {
+  position: absolute;
+  left: 5px;
+  bottom: 5px; }
 
 .day-off {
   background: #bdbdbd url(../img/workout/rest.svg) no-repeat center center;
@@ -2157,6 +2169,13 @@
   .miss svg {
     background-color: transparent;
     fill: #ef9a9a; }
+
+.icon-disabled svg {
+  background-color: transparent;
+  fill: #bdbdbd; }
+
+.up-five {
+  margin-top: -5px; }
 
 .pt-sidenav {
   background: #ff9800; }

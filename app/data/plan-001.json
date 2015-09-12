@@ -1,0 +1,1071 @@
+
+{
+	"trainingId": "001",
+	"name" : "Runner's World Hat Trick",
+	"img" : "run-2.png",
+	"startDate" : 1434340800000,
+	"goalDate" : 1445083200000,
+	"week" : 13,
+	"totalWeeks" : 19,
+	"weeks" : [
+		[
+			{
+				"training" : false,
+				"dow" : "M"
+			},
+			{
+				"dow" : "Tu",
+				"training" : {
+					"recorded" : true,
+					"success" : true,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					},
+					"actual" : {
+						"time" : "28m",
+						"distance" : "2.19 mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "W"
+			},
+			{
+				"dow" : "Th",
+				"training" : {
+					"recorded" : true,
+					"success" : true,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					},
+					"actual" : {
+						"time" : "29m",
+						"distance" : "2.25 mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "F"
+			},
+			{
+				"dow" : "Sa",
+				"training" : {
+					"recorded" : true,
+					"success" : true,
+					"type" : "run",
+					"goal" : {
+						"distance" : "3mi"
+					},
+					"actual" : {
+						"time" : "45m",
+						"distance" : "3.29 mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "Su"
+			}
+		],
+		[
+			{
+				"training" : false,
+				"dow" : "M"
+			},
+			{
+				"dow" : "Tu",
+				"training" : {
+					"recorded" : true,
+					"success" : true,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					},
+					"actual" : {
+						"time" : "28m",
+						"distance" : "2.19 mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "W"
+			},
+			{
+				"dow" : "Th",
+				"training" : {
+					"recorded" : true,
+					"success" : true,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					},
+					"actual" : {
+						"time" : "28m",
+						"distance" : "2.19 mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "F"
+			},
+			{
+				"dow" : "Sa",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"distance" : "4mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "Su"
+			}
+		],
+		[
+			{
+				"training" : false,
+				"dow" : "M"
+			},
+			{
+				"dow" : "Tu",
+				"training" : {
+					"recorded" : true,
+					"success" : true,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					},
+					"actual" : {
+						"time" : "28m",
+						"distance" : "2.19 mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "W"
+			},
+			{
+				"dow" : "Th",
+				"training" : {
+					"recorded" : true,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "F"
+			},
+			{
+				"dow" : "Sa",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"distance" : "4mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "Su"
+			}
+		],
+		[
+			{
+				"training" : false,
+				"dow" : "M"
+			},
+			{
+				"dow" : "Tu",
+				"training" : {
+					"recorded" : true,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "W"
+			},
+			{
+				"dow" : "Th",
+				"training" : {
+					"recorded" : true,
+					"success" : true,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					},
+					"actual" : {
+						"time" : "28m",
+						"distance" : "2.19 mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "F"
+			},
+			{
+				"dow" : "Sa",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"distance" : "4mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "Su"
+			}
+		],
+		[
+			{
+				"training" : false,
+				"dow" : "M"
+			},
+			{
+				"dow" : "Tu",
+				"training" : {
+					"recorded" : true,
+					"success" : true,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					},
+					"actual" : {
+						"time" : "28m",
+						"distance" : "2.19 mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "W"
+			},
+			{
+				"dow" : "Th",
+				"training" : {
+					"recorded" : true,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "F"
+			},
+			{
+				"dow" : "Sa",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"distance" : "4mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "Su"
+			}
+		],
+		[
+			{
+				"training" : false,
+				"dow" : "M"
+			},
+			{
+				"dow" : "Tu",
+				"training" : {
+					"recorded" : true,
+					"success" : true,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					},
+					"actual" : {
+						"time" : "28m",
+						"distance" : "2.19 mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "W"
+			},
+			{
+				"dow" : "Th",
+				"training" : {
+					"recorded" : true,
+					"success" : true,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					},
+					"actual" : {
+						"time" : "28m",
+						"distance" : "2.19 mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "F"
+			},
+			{
+				"dow" : "Sa",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"distance" : "4mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "Su"
+			}
+		],
+		[
+			{
+				"training" : false,
+				"dow" : "M"
+			},
+			{
+				"dow" : "Tu",
+				"training" : {
+					"recorded" : true,
+					"success" : true,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					},
+					"actual" : {
+						"time" : "28m",
+						"distance" : "2.19 mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "W"
+			},
+			{
+				"dow" : "Th",
+				"training" : {
+					"recorded" : true,
+					"success" : true,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					},
+					"actual" : {
+						"time" : "26m",
+						"distance" : "2.20 mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "F"
+			},
+			{
+				"dow" : "Sa",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"distance" : "4mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "Su"
+			}
+		],
+		[
+			{
+				"training" : false,
+				"dow" : "M"
+			},
+			{
+				"dow" : "Tu",
+				"training" : {
+					"recorded" : true,
+					"success" : true,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					},
+					"actual" : {
+						"time" : "28m",
+						"distance" : "2.19 mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "W"
+			},
+			{
+				"dow" : "Th",
+				"training" : {
+					"recorded" : true,
+					"success" : true,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					},
+					"actual" : {
+						"time" : "28m",
+						"distance" : "2.19 mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "F"
+			},
+			{
+				"dow" : "Sa",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"distance" : "4mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "Su"
+			}
+		],
+		[
+			{
+				"training" : false,
+				"dow" : "M"
+			},
+			{
+				"dow" : "Tu",
+				"training" : {
+					"recorded" : true,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "W"
+			},
+			{
+				"dow" : "Th",
+				"training" : {
+					"recorded" : true,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "F"
+			},
+			{
+				"dow" : "Sa",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"distance" : "4mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "Su"
+			}
+		],
+		[
+			{
+				"training" : false,
+				"dow" : "M"
+			},
+			{
+				"dow" : "Tu",
+				"training" : {
+					"recorded" : true,
+					"success" : true,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					},
+					"actual" : {
+						"time" : "42m",
+						"distance" : "3.29 mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "W"
+			},
+			{
+				"dow" : "Th",
+				"training" : {
+					"recorded" : true,
+					"success" : true,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					},
+					"actual" : {
+						"time" : "28m",
+						"distance" : "2.19 mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "F"
+			},
+			{
+				"dow" : "Sa",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"distance" : "4mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "Su"
+			}
+		],
+		[
+			{
+				"training" : false,
+				"dow" : "M"
+			},
+			{
+				"dow" : "Tu",
+				"training" : {
+					"recorded" : true,
+					"success" : true,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					},
+					"actual" : {
+						"time" : "28m",
+						"distance" : "2.19 mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "W"
+			},
+			{
+				"dow" : "Th",
+				"training" : {
+					"recorded" : true,
+					"success" : true,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					},
+					"actual" : {
+						"time" : "41m",
+						"distance" : "3.1 mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "F"
+			},
+			{
+				"dow" : "Sa",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"distance" : "4mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "Su"
+			}
+		],
+		[
+			{
+				"training" : false,
+				"dow" : "M"
+			},
+			{
+				"dow" : "Tu",
+				"training" : {
+					"recorded" : true,
+					"success" : true,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					},
+					"actual" : {
+						"time" : "28m",
+						"distance" : "2.19 mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "W"
+			},
+			{
+				"dow" : "Th",
+				"training" : {
+					"recorded" : true,
+					"success" : true,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					},
+					"actual" : {
+						"time" : "28m",
+						"distance" : "2.19 mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "F"
+			},
+			{
+				"dow" : "Sa",
+				"training" : {
+					"recorded" : true,
+					"success" : true,
+					"type" : "run",
+					"goal" : {
+						"distance" : "11 mi"
+					},
+					"actual" : {
+						"time" : "2:32",
+						"distance" : "11.04 mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "Su"
+			}
+		],
+		
+
+		[
+			{
+				"training" : false,
+				"dow" : "M"
+			},
+			{
+				"dow" : "Tu",
+				"training" : {
+					"recorded" : true,
+					"success" : true,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					},
+					"actual" : {
+						"time" : "28m",
+						"distance" : "2.19 mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "W"
+			},
+			{
+				"dow" : "Th",
+				"training" : {
+					"recorded" : true,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "F"
+			},
+			{
+				"dow" : "Sa",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"distance" : "4mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "Su"
+			}
+		],
+		[
+			{
+				"training" : false,
+				"dow" : "M"
+			},
+			{
+				"dow" : "Tu",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "W"
+			},
+			{
+				"dow" : "Th",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "F"
+			},
+			{
+				"dow" : "Sa",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"distance" : "4mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "Su"
+			}
+		],
+		[
+			{
+				"training" : false,
+				"dow" : "M"
+			},
+			{
+				"dow" : "Tu",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "W"
+			},
+			{
+				"dow" : "Th",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "F"
+			},
+			{
+				"dow" : "Sa",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"distance" : "4mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "Su"
+			}
+		],
+		[
+			{
+				"training" : false,
+				"dow" : "M"
+			},
+			{
+				"dow" : "Tu",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "W"
+			},
+			{
+				"dow" : "Th",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "F"
+			},
+			{
+				"dow" : "Sa",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"distance" : "4mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "Su"
+			}
+		],
+		[
+			{
+				"training" : false,
+				"dow" : "M"
+			},
+			{
+				"dow" : "Tu",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "W"
+			},
+			{
+				"dow" : "Th",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "F"
+			},
+			{
+				"dow" : "Sa",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "Su"
+			}
+		],
+		[
+			{
+				"training" : false,
+				"dow" : "M"
+			},
+			{
+				"dow" : "Tu",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "W"
+			},
+			{
+				"dow" : "Th",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "F"
+			},
+			{
+				"dow" : "Sa",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"distance" : "4mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "Su"
+			}
+		],
+		[
+			{
+				"training" : false,
+				"dow" : "M"
+			},
+			{
+				"dow" : "Tu",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "W"
+			},
+			{
+				"dow" : "Th",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"time" : "30m"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "F"
+			},
+			{
+				"dow" : "Sa",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"distance" : "4mi"
+					}
+				}
+			},
+			{
+				"training" : false,
+				"dow" : "Su"
+			}
+		]
+	]
+}

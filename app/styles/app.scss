@@ -130,6 +130,24 @@ $font-stack: 'ProximaNova', sans-serif;
 		left: 5px;
 		top: 5px;
 	}
+
+  .train-date {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+
+  .goal-distance {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .goal-time {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+  }
 }
 
 .day-off {
@@ -181,6 +199,17 @@ $font-stack: 'ProximaNova', sans-serif;
 		background-color: transparent;
 		fill: material-color('red', '200');
 	}
+}
+
+.icon-disabled {
+  svg {
+    background-color: transparent;
+    fill: material-color('grey', '400');
+  }
+}
+
+.up-five {
+  margin-top: -5px;
 }
 
 @import 'sidenav';

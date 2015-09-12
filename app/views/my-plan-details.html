@@ -1,0 +1,38 @@
+<div layout="row" layout-wrap layout-margin layout-align="center center">
+	<md-card flex-gt-sm="90" flex-gt-md="80">
+	  	<img ng-src="img/plans/{{model.mp.img}}" class="md-card-image" alt="plan header">
+		<md-card-content>
+			<h2>{{model.mp.name}} <span class="smaller">(<span am-time-ago="model.mp.goalDate"></span>)</span></h2>
+			<h3>
+				<md-button ng-click="model.weekNum=model.weekNum-1" ng-disabled="model.weekNum<=0" class="md-icon-button md-primary" aria-label="Previous Week">
+			    	<md-icon class="up-five" ng-class="{ 'icon-disabled': model.weekNum<=0 }" md-svg-src="img/arrow-left.svg"></md-icon>
+				</md-button>
+				Week {{model.weekNum+1}} of {{model.mp.totalWeeks}}
+				<md-button ng-click="model.weekNum=model.weekNum+1" ng-disabled="model.weekNum>=model.mp.totalWeeks-1" class="md-icon-button md-primary" aria-label="Next Week">
+			    	<md-icon class="up-five" ng-class="{ 'icon-disabled': model.weekNum>=model.mp.totalWeeks-1 }" md-svg-src="img/arrow-right.svg"></md-icon>
+				</md-button>
+			</h3>
+			<md-grid-list 
+				md-cols-gt-md="7" md-cols-sm="2" md-cols-md="4"
+		        md-row-height-gt-md="1:1" md-row-height="4:3"
+		        md-gutter-gt-md="8px" md-gutter-sm="8px" md-gutter="4px">
+      			<md-grid-tile ng-repeat="day in model.mp.weeks[model.weekNum] track by $index"
+		          	md-colspan-gt-sm="1" md-rowspan-gt-sm="1"
+		          	class="day"
+		          	ng-class="{ 'day-off': day.training == false, 'day-run' : day.training.type == 'run', 
+		          		success : day.training.recorded && day.training.success, miss : day.training.recorded && day.training.success == false }">
+		          	<div class="dow">{{day.dow}}</div>
+		          	<div class="train-date">{{day.date | amDateFormat:'M/D'}}</div>
+		          	<div ng-if="!day.training.recorded" class="goal-time">{{day.training.goal.time}}</div>
+		          	<div ng-if="day.training.recorded" class="goal-time">{{day.training.actual.time}}</div>
+		          	<div ng-if="!day.training.recorded" class="goal-distance">{{day.training.goal.distance}}</div>
+		          	<div ng-if="day.training.recorded" class="goal-distance">{{day.training.actual.distance}}</div>
+		          	<md-button class="md-icon-button md-primary" aria-label="Settings">
+					    <md-icon ng-if="day.training.recorded && day.training.success" class="success" md-svg-src="img/hit.svg" style="width: 75%; height: 75%;"></md-icon>
+				  		<md-icon ng-if="day.training.recorded && day.training.success == false" class="miss" md-svg-src="img/miss.svg" style="width: 75%; height: 75%;"></md-icon>
+					</md-button>
+      			</md-grid-tile>
+   			</md-grid-list>
+	 	</md-card-content>
+	</md-card>
+</div>

@@ -1,8 +1,10 @@
 'use strict';
 
-angular.module('pt', ['ngRoute', 'pt.nav', 'pt.hub', 'angularMoment', 'ngMaterial'])
-.run(['$rootScope', function($rootScope) {
-	
+angular.module('pt', ['ngRoute', 'pt.nav', 'pt.hub', 'pt.plans', 'angularMoment', 'ngMaterial'])
+.run(['$rootScope', '$location', function($rootScope, $location) {
+	$rootScope.go = function(path) {
+  		$location.path(path);
+	};
 
 }]);
 
@@ -11,7 +13,7 @@ angular.module('pt')
     $routeProvider.when('/',  {
         redirectTo      :   '/hub'
     });
-    $routeProvider.otherwise({redirectTo: '/404'});
+    // $routeProvider.otherwise({redirectTo: '/404'});
 }])
 .config(function($mdThemingProvider) {
   	$mdThemingProvider.theme('default')
