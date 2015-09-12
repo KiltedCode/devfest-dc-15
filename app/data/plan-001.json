@@ -117,11 +117,11 @@
 			{
 				"dow" : "Sa",
 				"training" : {
-					"recorded" : false,
+					"recorded" : true,
 					"success" : false,
 					"type" : "run",
 					"goal" : {
-						"distance" : "4mi"
+						"distance" : "3mi"
 					}
 				}
 			},
@@ -172,11 +172,14 @@
 			{
 				"dow" : "Sa",
 				"training" : {
-					"recorded" : false,
-					"success" : false,
+					"recorded" : true,
+					"success" : true,
 					"type" : "run",
 					"goal" : {
-						"distance" : "4mi"
+						"distance" : "3mi"
+					},
+					"actual" : {
+						"distance" : "3.1mi"
 					}
 				}
 			},
@@ -227,11 +230,11 @@
 			{
 				"dow" : "Sa",
 				"training" : {
-					"recorded" : false,
+					"recorded" : true,
 					"success" : false,
 					"type" : "run",
 					"goal" : {
-						"distance" : "4mi"
+						"distance" : "6.5mi"
 					}
 				}
 			},
@@ -282,7 +285,7 @@
 			{
 				"dow" : "Sa",
 				"training" : {
-					"recorded" : false,
+					"recorded" : true,
 					"success" : false,
 					"type" : "run",
 					"goal" : {
@@ -310,8 +313,8 @@
 						"time" : "30m"
 					},
 					"actual" : {
-						"time" : "28m",
-						"distance" : "2.19 mi"
+						"time" : "35m",
+						"distance" : "2.5 mi"
 					}
 				}
 			},
@@ -329,8 +332,8 @@
 						"time" : "30m"
 					},
 					"actual" : {
-						"time" : "28m",
-						"distance" : "2.19 mi"
+						"time" : "32m",
+						"distance" : "2.1 mi"
 					}
 				}
 			},
@@ -341,11 +344,14 @@
 			{
 				"dow" : "Sa",
 				"training" : {
-					"recorded" : false,
-					"success" : false,
+					"recorded" : true,
+					"success" : true,
 					"type" : "run",
 					"goal" : {
-						"distance" : "4mi"
+						"distance" : "8mi"
+					},
+					"actual" : {
+						"distance" : "9mi"
 					}
 				}
 			},
@@ -400,17 +406,27 @@
 			{
 				"dow" : "Sa",
 				"training" : {
-					"recorded" : false,
-					"success" : false,
+					"recorded" : true,
+					"success" : true,
 					"type" : "run",
 					"goal" : {
-						"distance" : "4mi"
+						"distance" : "1mi"
+					},
+					"actual" : {
+						"distance" : "1.5mi"
 					}
 				}
 			},
 			{
-				"training" : false,
-				"dow" : "Su"
+				"dow" : "Su",
+				"training" : {
+					"recorded" : true,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"distance" : "7mi"
+					}
+				}
 			}
 		],
 		[
@@ -459,11 +475,14 @@
 			{
 				"dow" : "Sa",
 				"training" : {
-					"recorded" : false,
-					"success" : false,
+					"recorded" : true,
+					"success" : true,
 					"type" : "run",
 					"goal" : {
 						"distance" : "4mi"
+					},
+					"actual" :  {
+						"distance" : "4.1mi"
 					}
 				}
 			},
@@ -510,17 +529,27 @@
 			{
 				"dow" : "Sa",
 				"training" : {
-					"recorded" : false,
-					"success" : false,
+					"recorded" : true,
+					"success" : true,
 					"type" : "run",
 					"goal" : {
-						"distance" : "4mi"
+						"distance" : "2mi"
+					},
+					"actual" : {
+						"distance" : "2.19mi"
 					}
 				}
 			},
 			{
-				"training" : false,
-				"dow" : "Su"
+				"dow" : "Su",
+				"training" : {
+					"recorded" : true,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"distance" : "9.5mi"
+					}
+				}
 			}
 		],
 		[
@@ -569,7 +598,7 @@
 			{
 				"dow" : "Sa",
 				"training" : {
-					"recorded" : false,
+					"recorded" : true,
 					"success" : false,
 					"type" : "run",
 					"goal" : {
@@ -628,7 +657,7 @@
 			{
 				"dow" : "Sa",
 				"training" : {
-					"recorded" : false,
+					"recorded" : true,
 					"success" : false,
 					"type" : "run",
 					"goal" : {
@@ -803,13 +832,20 @@
 					"success" : false,
 					"type" : "run",
 					"goal" : {
-						"distance" : "4mi"
+						"distance" : "5mi"
 					}
 				}
 			},
 			{
-				"training" : false,
-				"dow" : "Su"
+				"dow" : "Su",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"distance" : "12.5mi"
+					}
+				}
 			}
 		],
 		[
@@ -854,13 +890,20 @@
 					"success" : false,
 					"type" : "run",
 					"goal" : {
-						"distance" : "4mi"
+						"distance" : "8mi"
 					}
 				}
 			},
 			{
-				"training" : false,
-				"dow" : "Su"
+				"dow" : "Su",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "run",
+					"goal" : {
+						"distance" : "14mi"
+					}
+				}
 			}
 		],
 		[
