@@ -733,7 +733,7 @@
 			{
 				"dow" : "Th",
 				"training" : {
-					"recorded" : true,
+					"recorded" : false,
 					"success" : false,
 					"type" : "run",
 					"goal" : {

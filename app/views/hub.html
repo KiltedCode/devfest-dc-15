@@ -13,9 +13,13 @@
 		          	class="day"
 		          	ng-class="{ 'day-off': day.training == false, 'day-run' : day.training.type == 'run', success : day.training.recorded && day.training.success, miss : day.training.recorded && day.training.success == false }">
 		          	<div class="dow">{{day.dow}}</div>
-		          	<md-button class="md-icon-button md-primary" aria-label="Settings">
-					    <md-icon ng-if="day.training.recorded && day.training.success" class="success" md-svg-src="img/hit.svg"></md-icon>
-				  		<md-icon ng-if="day.training.recorded && day.training.success == false" class="miss" md-svg-src="img/miss.svg"></md-icon>
+		          	<div ng-if="!day.training.recorded" class="goal-time">{{day.training.goal.time}}</div>
+		          	<div ng-if="day.training.recorded" class="goal-time">{{day.training.actual.time}}</div>
+		          	<div ng-if="!day.training.recorded" class="goal-distance">{{day.training.goal.distance}}</div>
+		          	<div ng-if="day.training.recorded" class="goal-distance">{{day.training.actual.distance}}</div>
+		          	<md-button ng-if="day.training != false" class="md-icon-button md-primary" ng-class="{ 'cursor-default' : day.training.recorded }" aria-label="Settings">
+					    <md-icon ng-if="day.training.recorded && day.training.success" class="success" md-svg-src="img/hit.svg" style="width: 75%; height: 75%;"></md-icon>
+				  		<md-icon ng-if="day.training.recorded && day.training.success == false" class="miss" md-svg-src="img/miss.svg" style="width: 75%; height: 75%;"></md-icon>
 					</md-button>
       			</md-grid-tile>
    			</md-grid-list>
@@ -37,19 +41,9 @@
 			          	md-colspan-gt-sm="1" md-rowspan-gt-sm="1"
 			          	class="day"
 			          	ng-class="{ 'day-run' : type =='run','day-bike': type=='bike', 'day-swim': type=='swim', 'day-weights': type=='weights', 'day-yoga': type=='yoga' }">
-			          	<div class="dow">{{day.dow}}</div>
-			          	<md-button class="md-icon-button md-primary" aria-label="Settings">
-						    <md-icon ng-if="day.training.recorded && day.training.success" class="success" md-svg-src="img/hit.svg"></md-icon>
-					  		<md-icon ng-if="day.training.recorded && day.training.success == false" class="miss" md-svg-src="img/miss.svg"></md-icon>
-						</md-button>
 	      			</md-grid-tile>
 	   			</md-grid-list>
    			</div>
 	 	</md-card-content>
 	</md-card>	
 </div>
-
-
-<h2>Start a new plan?</h2>
-<div>plan 1</div>
-<div>plan 2</div>
