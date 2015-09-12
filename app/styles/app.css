@@ -2171,11 +2171,20 @@ button.cursor-default {
     background-color: transparent;
     fill: #a5d6a7; }
 
+.success-color svg {
+  fill: #2e7d32; }
+
 .miss {
   background-color: #c62828; }
   .miss svg {
     background-color: transparent;
     fill: #ef9a9a; }
+
+.miss-color svg {
+  fill: #c62828; }
+
+.bump-color svg {
+  fill: #ef6c00; }
 
 .icon-disabled svg {
   background-color: transparent;
@@ -2183,6 +2192,13 @@ button.cursor-default {
 
 .up-five {
   margin-top: -5px; }
+
+.md-button.md-icon-button.dialog-btn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  width: auto; }
 
 .pt-sidenav {
   background: #ff9800; }

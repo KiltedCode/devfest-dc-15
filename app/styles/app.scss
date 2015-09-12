@@ -202,12 +202,30 @@ button.cursor-default {
 	}
 }
 
+.success-color {
+  svg {
+    fill: material-color('green', '800');
+  }
+}
+
 .miss {
 	background-color: material-color('red', '800');
 	svg {
 		background-color: transparent;
 		fill: material-color('red', '200');
 	}
+}
+
+.miss-color {
+  svg {
+    fill: material-color('red', '800');
+  }
+}
+
+.bump-color {
+  svg {
+    fill: material-color('orange', '800');
+  }
 }
 
 .icon-disabled {
@@ -219,6 +237,15 @@ button.cursor-default {
 
 .up-five {
   margin-top: -5px;
+}
+
+.md-button.md-icon-button.dialog-btn {
+  @include border-radius(0);
+  width: auto;
+}
+
+.btn-desc {
+  padding-left: 25px;
 }
 
 @import 'sidenav';

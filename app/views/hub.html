@@ -1,8 +1,8 @@
 <div  
 	layout="row" layout-wrap layout-align="center center">
-	<md-card ng-repeat="mp in model.myPlansSumm" flex-gt-sm="90" flex-gt-md="80">
+	<md-card ng-repeat="mp in model.myPlansSumm"  flex-gt-sm="90" flex-gt-md="80">
 	  	<img ng-src="img/plans/{{mp.img}}" class="md-card-image" alt="plan header">
-		<md-card-content>
+		<md-card-content id="card-{{mp.trainingId}}">
 			<h2>{{mp.name}} <span class="smaller">(<span am-time-ago="mp.goalDate"></span>)</span></h2>
 			<h3>Week {{mp.week}} of {{mp.totalWeeks}}</h3>
 			<md-grid-list  md-cols-gt-md="7" md-cols-sm="2" md-cols-md="4"
@@ -20,7 +20,10 @@
 		          	<div ng-if="day.training.recorded" class="goal-time">{{day.training.actual.time}}</div>
 		          	<div ng-if="!day.training.recorded" class="goal-distance">{{day.training.goal.distance}}</div>
 		          	<div ng-if="day.training.recorded" class="goal-distance">{{day.training.actual.distance}}</div>
-		          	<md-button ng-if="day.training != false" class="md-icon-button md-primary" ng-class="{ 'cursor-default' : day.training.recorded }" aria-label="Settings">
+		          	<md-button 
+		          		ng-if="day.training != false" ng-click="model.openRecordWorkout($event, mp.trainingId, $index)"
+		          		class="md-icon-button md-primary" ng-class="{ 'cursor-default' : day.training.recorded }" 
+		          		aria-label="Settings">
 					    <md-icon ng-if="day.training.recorded && day.training.success" class="success" md-svg-src="img/hit.svg" style="width: 75%; height: 75%;"></md-icon>
 				  		<md-icon ng-if="day.training.recorded && day.training.success == false" class="miss" md-svg-src="img/miss.svg" style="width: 75%; height: 75%;"></md-icon>
 					</md-button>

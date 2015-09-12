@@ -7,7 +7,7 @@ angular.module('pt.plans')
 	$scope.model.weekNum = 0;
 	
 	PlanService.getPlanDetails(planId)
-		.success(function(data, status) {
+		.then(function(data, status) {
 			$scope.model.mp = data;
 			var dateTS = data.startDate;
 			$scope.model.mp.weeks = _.map(data.weeks, function(week) {
@@ -19,9 +19,7 @@ angular.module('pt.plans')
 			});
 			$scope.model.weekNum = $scope.model.mp.week - 1;
 			console.log('mp', $scope.model.mp);
-		})
-		.error(function(data, status) {
-			//TODO: error handling
+		}, function(data, status) {
 			console.log('error', status);
-		});
+		} );
 }]);	

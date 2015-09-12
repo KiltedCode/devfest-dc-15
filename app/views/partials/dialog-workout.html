@@ -1,0 +1,47 @@
+<md-dialog aria-label="Training Session">
+  <md-dialog-content layout="column" style="width:350px;max-height:350px;">
+    <form>
+      <div>
+        <md-button ng-click="model.workoutShow='hit'" class="md-icon-button dialog-btn" aria-label="Workout Complete" >
+          <md-icon class="success-color" md-svg-src="img/hit.svg"></md-icon> Workout Complete
+        </md-button>
+      </div>
+      <div ng-if="model.workoutShow=='hit'" class="btn-desc">
+        <form>
+          <md-input-container>
+            <label>Actual Time</label>
+            <input ng-model="model.workout.time">
+          </md-input-container>
+          <md-input-container>
+            <label>Actual Distance</label>
+            <input ng-model="model.workout.distance">
+          </md-input-container>
+        </form>
+      </div>
+      <div>
+      <md-button ng-click="model.workoutShow='miss'" class="md-icon-button dialog-btn" aria-label="Missed Workout" >
+          <md-icon class="miss-color" md-svg-src="img/miss.svg"></md-icon> Missed Workout
+      </md-button>
+      </div>
+      <div ng-if="model.workoutShow=='miss'" class="btn-desc">
+        This records the workout as being uncompleted.
+      </div>
+      <div>
+        <md-button ng-click="model.workoutShow='bump'" class="md-icon-button dialog-btn" aria-label="Bump Workout" >
+            <md-icon class="bump-color" md-svg-src="img/arrow-right.svg"></md-icon> Bump Workout
+        </md-button>
+      </div>
+      <div ng-if="model.workoutShow=='bump'" class="btn-desc">
+        This will move this workout 1 day later, for when you just can't squeeze it in today.
+      </div>
+    </form>
+  </md-dialog-content>
+  <div class="md-actions" layout="row">
+    <md-button ng-click="model.recordWorkout('cancel')" >
+      Cancel
+    </md-button>
+    <md-button ng-click="model.recordWorkout(model.workoutShow)" ng-disabled="model.workoutShow==''" >
+      OK
+    </md-button>
+  </div>
+</md-dialog>
