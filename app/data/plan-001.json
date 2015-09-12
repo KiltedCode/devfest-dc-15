@@ -1005,15 +1005,22 @@
 				"training" : {
 					"recorded" : false,
 					"success" : false,
-					"type" : "run",
+					"type" : "finish",
 					"goal" : {
-						"distance" : "4mi"
+						"distance" : "5K & 10K"
 					}
 				}
 			},
 			{
-				"training" : false,
-				"dow" : "Su"
+				"dow" : "Su",
+				"training" : {
+					"recorded" : false,
+					"success" : false,
+					"type" : "finish",
+					"goal" : {
+						"distance" : "13.1mi"
+					}
+				}
 			}
 		],
 		[

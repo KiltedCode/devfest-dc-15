@@ -11,7 +11,10 @@
       			<md-grid-tile ng-repeat="day in mp.currentWeek"
 		          	md-colspan-gt-sm="1" md-rowspan-gt-sm="1"
 		          	class="day"
-		          	ng-class="{ 'day-off': day.training == false, 'day-run' : day.training.type == 'run', success : day.training.recorded && day.training.success, miss : day.training.recorded && day.training.success == false }">
+		          	ng-class="{ 'day-off': day.training == false, 'day-run' : day.training.type == 'run', 'day-long-run' : day.training.type == 'long-run', 
+		          		'day-bike' : day.training.type == 'bike', 'day-swim' : day.training.type == 'swim', 'day-weights' : day.training.type == 'weights',
+		          		'day-yoga' : day.training.type == 'yoga', 'day-finish' : day.training.type == 'finish',
+		          		success : day.training.recorded && day.training.success, miss : day.training.recorded && day.training.success == false }">
 		          	<div class="dow">{{day.dow}}</div>
 		          	<div ng-if="!day.training.recorded" class="goal-time">{{day.training.goal.time}}</div>
 		          	<div ng-if="day.training.recorded" class="goal-time">{{day.training.actual.time}}</div>
@@ -32,8 +35,8 @@
 	<md-card flex-gt-sm="90" flex-gt-md="80">
 		<md-card-content layout="row" layout-wrap>
 			<h2 flex="90">Start a new plan?</h2>
-			<div ng-repeat="ap in model.availablePlans" flex-sm="90" flex-gt-sm="50" flex-gt-md="50">
-				<h3>{{ap.name}}</h3>
+			<div ng-repeat="ap in model.availablePlans" layout-margin flex-sm="90" flex-gt-sm="40" flex-gt-md="40">
+				<h3>{{ap.name}} <span class="smaller">({{ap.totalWeeks}} weeks)</span></h3>
 				<md-grid-list  md-cols-gt-md="7" md-cols-sm="2" md-cols-md="4"
 			        md-row-height-gt-md="1:1" md-row-height="4:3"
 			        md-gutter-gt-md="8px" md-gutter-sm="8px" md-gutter="4px">
@@ -45,5 +48,6 @@
 	   			</md-grid-list>
    			</div>
 	 	</md-card-content>
+	 	
 	</md-card>	
 </div>

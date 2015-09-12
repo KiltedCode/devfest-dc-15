@@ -189,6 +189,11 @@ button.cursor-default {
 	background-size: 70%;
 }
 
+.day-finish {
+  background: material-color('orange', '500') url(../img/workout/finish.svg) no-repeat center center;
+  background-size: 70%;
+}
+
 .success {
 	background-color: material-color('green', '800');
 	svg {

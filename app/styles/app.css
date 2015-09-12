@@ -2161,6 +2161,10 @@ button.cursor-default {
   background: #ffc107 url(../img/workout/yoga.svg) no-repeat center center;
   background-size: 70%; }
 
+.day-finish {
+  background: #ff9800 url(../img/workout/finish.svg) no-repeat center center;
+  background-size: 70%; }
+
 .success {
   background-color: #2e7d32; }
   .success svg {
