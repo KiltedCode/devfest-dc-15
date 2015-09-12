@@ -10,7 +10,7 @@
 		        md-gutter-gt-md="8px" md-gutter-sm="8px" md-gutter="4px">
       			<md-grid-tile ng-repeat="day in mp.currentWeek"
 		          	md-colspan-gt-sm="1" md-rowspan-gt-sm="1"
-		          	class="day"
+		          	class="day" title="{{day.training.type || 'rest day'}}"
 		          	ng-class="{ 'day-off': day.training == false, 'day-run' : day.training.type == 'run', 'day-long-run' : day.training.type == 'long-run', 
 		          		'day-bike' : day.training.type == 'bike', 'day-swim' : day.training.type == 'swim', 'day-weights' : day.training.type == 'weights',
 		          		'day-yoga' : day.training.type == 'yoga', 'day-finish' : day.training.type == 'finish',
@@ -45,7 +45,7 @@
 			        md-gutter-gt-md="8px" md-gutter-sm="8px" md-gutter="4px">
 	      			<md-grid-tile  ng-repeat="type in ap.types"
 			          	md-colspan-gt-sm="1" md-rowspan-gt-sm="1"
-			          	class="day"
+			          	class="day" title="{{type}}"
 			          	ng-class="{ 'day-run' : type =='run','day-bike': type=='bike', 'day-swim': type=='swim', 'day-weights': type=='weights', 'day-yoga': type=='yoga' }">
 	      			</md-grid-tile>
 	   			</md-grid-list>

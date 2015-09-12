@@ -18,7 +18,7 @@
 		        md-gutter-gt-md="8px" md-gutter-sm="8px" md-gutter="4px">
       			<md-grid-tile ng-repeat="day in model.mp.weeks[model.weekNum] track by $index"
 		          	md-colspan-gt-sm="1" md-rowspan-gt-sm="1"
-		          	class="day"
+		          	class="day" title="{{day.training.type || 'rest day'}}"
 		          	ng-class="{ 'day-off': day.training == false, 'day-run' : day.training.type == 'run', 'day-long-run' : day.training.type == 'long-run', 
 		          		'day-bike' : day.training.type == 'bike', 'day-swim' : day.training.type == 'swim', 'day-weights' : day.training.type == 'weights',
 		          		'day-yoga' : day.training.type == 'yoga', 'day-finish' : day.training.type == 'finish',
