@@ -18,7 +18,6 @@ angular.module('pt.plans')
 				});
 			});
 			$scope.model.weekNum = $scope.model.mp.week - 1;
-			console.log('mp', $scope.model.mp);
 		}, function(data, status) {
 			console.log('error', status);
 		} );
