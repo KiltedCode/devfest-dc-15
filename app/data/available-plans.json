@@ -3,12 +3,21 @@
 		"planId" : "001",
 		"name" : "Sprint Triathlon",
 		"img" : null,
+		"totalWeeks" : 20,
 		"types" : ["run", "bike", "swim"]
 	},
 	{
 		"planId" : "002",
+		"name" : "Get Fit",
+		"img" : "run-1.png",
+		"totalWeeks" : 10,
+		"types" : ["run", "weights", "yoga"]
+	},
+	{
+		"planId" : "003",
 		"name" : "Marathon for Beginners",
 		"img" : "run-1.png",
+		"totalWeeks" : 25,
 		"types" : ["run"]
 	}
 ]
