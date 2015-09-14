@@ -2200,6 +2200,9 @@ button.cursor-default {
   border-radius: 0;
   width: auto; }
 
+.btn-desc {
+  padding-left: 25px; }
+
 .pt-sidenav {
   background: #ff9800; }
 

@@ -31,7 +31,7 @@ angular.module('pt.plans')
 			var deferred = $q.defer();
 			// var mps = $sessionStorage.mps;
 			var plan = $sessionStorage['plan-'+id];
-			currWeek = plan.weeks[plan.week-1];
+			var currWeek = plan.weeks[plan.week-1];
 			if(action=='hit') {
     			var training = angular.copy(currWeek[index].training);
     			training.recorded = true;
